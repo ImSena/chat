@@ -1,0 +1,17 @@
+{
+    "name": "imsena/chat",
+    "description": "Aplicação web que conecta pessoas de todo o mundo para conversar",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Imsena\\Chat\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Bruno Sena",
+            "email": "BrunoSena14@outlook.com"
+        }
+    ],
+    "require": {}
+}

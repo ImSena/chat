@@ -21,4 +21,15 @@ class User{
 
         return $this->pdo->lastInsertId();
     }
+
+    public function read($email){
+        $sql = 'SELECT id_user,senha  from tab_users WHERE email = :email';
+        $stmt = $this->pdo->prepare($sql);
+        $stmt->execute([
+            ':email' => $email,
+        ]);
+        $user = $stmt->fetch();
+
+        return $user;
+    }
 }
