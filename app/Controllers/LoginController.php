@@ -2,10 +2,12 @@
 
 namespace App\Controllers;
 
-class LoginController{
+use App\Core\Controller;
+
+class LoginController extends Controller{
 
     public function index(){
-        echo 'login';
+        echo __DIR__;exit;
     }
 
 }

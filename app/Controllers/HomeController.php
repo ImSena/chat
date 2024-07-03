@@ -2,11 +2,12 @@
 
 namespace App\Controllers;
 
-class HomeController {
+use App\Core\Controller;
+
+class HomeController extends Controller{
 
     public function index() {
-        // Exemplo simples: exibir uma mensagem de boas-vindas
-        echo "Bem-vindo à minha aplicação!";
+        $this->render('home', 'index');
     }
 
 }
